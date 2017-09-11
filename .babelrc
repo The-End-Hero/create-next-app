@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    [
+      "module-resolver", {
+        "root": ["."],
+        "alias": {
+          "styles": "./styles"
+        },
+        "cwd": "babelrc"
+    }],
+    [
+      "wrap-in-js",
+      {
+        "extensions": ["css$", "scss$"]
+      }
+    ],
+    "transform-decorators-legacy"
+//    ["transform-define", "./env-config.js"]
+  ],
+  "presets": [
+    "next/babel",
+    "stage-0"
+  ],
+  "ignore": []
+}
